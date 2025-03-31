@@ -3,11 +3,16 @@
     <head>
         <title>Week 2 Labs</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Tribute to the roach">
+        <meta name="keywords" content="cool roach guy">
+        <meta name="author" content="Zach">
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
     <body>
         <div id="main">
             <h1>Welcome to Week 2 Lab</h1>
+            <span id="welcome-message"></span>
             <h2>This week we will be covering URL, URI, Attributes, more HTML, and some JavaScript and a little CSS.</h2>
             <div id="navigation">
                 <ul>  
@@ -30,6 +35,12 @@
                 </ul>
             </div>
         </div>
+        <script>
+            var message = prompt("What is your name?");
+            alert("HIIIIIIIII " + message);
+            document.getElementById("welcome-message").innerHTML = `Welcome ${message} to week 2 lab.`;
+            document.getElementById("footer").style.color = "red";
+        </script>
     </body>
 
 </html>
