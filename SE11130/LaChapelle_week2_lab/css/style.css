@@ -1,0 +1,42 @@
+/* CSS Comment Syntax */
+body{
+    background-color: burlywood;
+    background-image: linear-gradient(burlywood, gray);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+}
+#main{
+    border:1px solid black;
+    width:750px;
+    border-radius: 10px;
+    background-color: darkgray;
+}
+h1{
+    text-align: center;
+    border: 1px solid black;
+    padding-bottom: 10px
+}
+h2{
+    padding: 10px;
+}
+li{
+    text-decoration: none;
+    display: inline;
+}
+
+a:link{
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 25px;
+
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    text-decoration: underline;
+}
