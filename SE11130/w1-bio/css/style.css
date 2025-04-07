@@ -1,0 +1,48 @@
+/* NAV CUSTOMIZATION */
+html, body{
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/websitebackground.jpg);
+}
+#main{
+    width: 1000px;
+    padding: 5px;
+    border: 1px solid black;
+}
+#header{
+    text-align: center;
+    color: white;
+}
+#content{
+    height: fit-content;
+    width: 600px;
+    background-color: yellow;
+    float: left;
+    margin-right:auto;
+}
+#nav h1{
+    justify-content: center  ;
+    display:flex;
+    gap: 100px;
+}
+#nav a{
+    font-size:18;
+}
+#bio{
+    font-size:24px;
+}
+#schooling{
+    font-size: 24px;
+}
+#hobbies{
+    font-size: 24px;
+}
+#NEIT-tiger{
+    float: right;
+    width: 50px;
+    height: 50px;
+}   
+#footer{
+    height: auto;
+    background-color: lightblue;
+}
