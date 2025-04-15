@@ -12,6 +12,7 @@ html, body{
 #header{
     text-align: center;
     color: white;
+    
 }
 #content{
     height: fit-content;
@@ -20,10 +21,16 @@ html, body{
     float: left;
     margin-right:auto;
 }
+#nav{
+    width:1200px;
+    
+}
 #nav h1{
-    justify-content: center  ;
+    justify-content: center;
     display:flex;
-    gap: 100px;
+    gap: 50px;
+    padding-right: 200px;
+
 }
 #nav a{
     font-size:18;
