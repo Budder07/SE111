@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 | JavaScript Pay Calculator</title>
+</head>
+<body>
+    <h1>Week 6 | JavaScript Pay Calculator</h1>
+    <h2>Look in the dev console :)</h2>
+    <script>
+    // Welcome Message
+    alert("Welcome to the PAY CALCULATOR!")
+    // set variables
+    var hrPay = Number(14.50); 
+    var hrWork = Number(32);
+    var taxRate = Number(0.20);
+    // --------------------------------------------------------------------------------
+    function payCalc(){
+        // Solves for Gross pay, tax amount, and net pay
+        gPay = hrPay * hrWork;
+        samShare = gPay * taxRate;
+        nPay = gPay - samShare;
+        // outputs solved for variables
+        console.log(`Gross Pay: $${gPay.toFixed(2)}`);
+        console.log(`Uncle Sam's Share: $${samShare.toFixed(2)}`);
+        console.log(`Net Pay: $${nPay.toFixed(2)}`);
+        // alert to user
+        alert(`Gross Pay: $${gPay.toFixed(2)} \nUncle Sam's Share: $${samShare.toFixed(2)} \nNet Pay: $${nPay.toFixed(2)}` );
+}
+payCalc()
+    </script>
+</body>
+</html>
