@@ -37,7 +37,7 @@
 		for (key in people[i] ){
 			// Creates  <p> elements to organize all information
 			var p = document.createElement(`p`)
-			var textNodeP = document.createTextNode(`${key}: ${people[i][key]}`)
+			var textNodeP = document.createTextNode(`${people[i][key]}`)
 			// move all data up hierarchy
 			p.appendChild(textNodeP)
 			tempDiv.appendChild(p)
