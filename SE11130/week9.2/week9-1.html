@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 9 | Creating Elements</title>
+<style type="text/css">
+	.border{border:1px solid black;}
+</style>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+	//Use this Array of objects to complete the assignment.
+	var people =[
+		{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+		{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+		{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+		{first:"Kevin", last:"McCallister", credit:"Home Alone" },
+		{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+		{first:"Marion", last:"Cobretti", credit:"Cobra" }
+	]
+	// Assign body tag to variable
+	var bodyTag = document.querySelector("body");
+
+	// loop to set requested ID and class to tempDiv
+	for (let i = 0; i < people.length; i++){
+		// let will declare tempDiv as a local variable
+		let tempDiv;
+		// set tempDiv element and give it is generated ID and genereates a class of border so that CSS can apply style changes
+		tempDiv = document.createElement("div");
+		tempDiv.setAttribute("id", String(i));
+		tempDiv.setAttribute("class", "border");
+
+		for (key in people[i] ){
+			// Creates  <p> elements to organize all information
+			var p = document.createElement(`p`)
+			var textNodeP = document.createTextNode(`${key}: ${people[i][key]}`)
+			// move all data up hierarchy
+			p.appendChild(textNodeP)
+			tempDiv.appendChild(p)
+		}
+		// invevitably displays all info onto HTML page
+		bodyTag.appendChild(tempDiv)
+	}
+
+</script>
+
+</html>
